@@ -1,0 +1,27 @@
+#Extending for loops & printings the things one line & new line
+"""
+Created on Wed Dec 19 11:05:18 2018
+
+@author: vivek
+"""
+number = "123, 23,34,567,78"
+cleanedNumber=''
+for char in number:
+    if char in '123456789':
+        cleanedNumber = cleanedNumber+char
+newNumber = int(cleanedNumber)        
+print("the number is {}".format(newNumber))
+for state in("not ill","ill","good","bad"):
+    print("This man is {}".format(state))
+for i in range(0,100,10):
+    print(i)
+# Printing odd no. till 100
+for i in range(1,100,2):
+    print(i)
+#printing numbers divisible by 3
+for i in range(3,50,3):
+    print(i)
+for i in range(1,4):
+    for j in range(1,4):
+        print("{} times {} is {}".format(i,j,i*j),end='\t')# end = '\t'  is used to print in same line
+    print("===========")
