@@ -1,0 +1,13 @@
+#String & list, taking user input of strings and making it list
+"""
+Created on Fri Dec 21 16:58:03 2018
+
+@author: vivek
+"""
+string = input("Enter the string whatever you want to make list seperated by space")
+#list= string.split()
+#print(list(string))
+print("[",end="")
+for c in string:
+    print(c, end=" ,")
+print("]",end="")
